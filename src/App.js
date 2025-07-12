@@ -174,8 +174,9 @@ const TodoApp = () => {
         /* Responsive */
         @media (max-width: 480px) {
           .todo-app {
-            margin-top: 30px;
+            margin-top: 100px;
             padding: 15px 20px;
+            margin-left: 18px;
           }
           button {
             padding: 8px 12px;
