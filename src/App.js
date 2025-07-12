@@ -34,7 +34,7 @@ const TodoApp = () => {
 
   return (
     <div className="todo-app">
-      <h1>My To-Do List</h1>
+      <h1>Rune List</h1>
 
       <div className="input-container">
         <input
@@ -73,7 +73,9 @@ const TodoApp = () => {
         }
         body {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          background: #f9f9f9;
+          background-image: url('/pink-study.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
           margin: 0; padding: 0;
           display: flex;
           justify-content: center;
@@ -109,11 +111,11 @@ const TodoApp = () => {
           transition: border-color 0.3s;
         }
         input[type="text"]:focus {
-          border-color: #007bff;
+          border-color: #6B4353;
           outline: none;
         }
         button {
-          background-color: #007bff;
+          background-color: #6B4353;
           border: none;
           color: white;
           padding: 10px 16px;
@@ -123,7 +125,7 @@ const TodoApp = () => {
           transition: background-color 0.3s;
         }
         button:hover {
-          background-color: #0056b3;
+          background-color: #8F4057;
         }
 
         p {
@@ -142,6 +144,8 @@ const TodoApp = () => {
           justify-content: space-between;
           padding: 8px 0;
           border-bottom: 1px solid #eee;
+          background: #F8C7DE;
+          border-radius: 8px;
         }
         .todo-list li.completed span {
           text-decoration: line-through;
