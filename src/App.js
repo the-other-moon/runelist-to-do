@@ -146,6 +146,8 @@ const TodoApp = () => {
           border-bottom: 1px solid #eee;
           background: #F8C7DE;
           border-radius: 8px;
+          border-radius: 8px;
+          margin-bottom: 8px; 
         }
         .todo-list li.completed span {
           text-decoration: line-through;
@@ -176,7 +178,7 @@ const TodoApp = () => {
           .todo-app {
             margin-top: 100px;
             padding: 15px 20px;
-            margin-left: 18px;
+            margin: 100px auto 0;
           }
           button {
             padding: 8px 12px;
