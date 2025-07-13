@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./TodoApp.css";
 
 const TodoApp = () => {
-  const [todos, setTodos] = useState(() => {
-    const saved = localStorage.getItem("todos");
-    return saved ? JSON.parse(saved) : [];
-  });
-  const [input, setInput] = useState("");
+    const [todos, setTodos] = useState(() => {
+        const saved = localStorage.getItem("todos");
+        return saved ? JSON.parse(saved) : [];
+    });
 
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
 
   const addTodo = () => {
     if (input.trim() === "") return;
