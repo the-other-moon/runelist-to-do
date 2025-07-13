@@ -4,12 +4,14 @@ import "./TodoApp.css";
 const TodoApp = () => {
     const [todos, setTodos] = useState(() => {
         const saved = localStorage.getItem("todos");
+        console.log("Loading saved todos:", saved);
         return saved ? JSON.parse(saved) : [];
     });
 
     useEffect(() => {
         localStorage.setItem("todos", JSON.stringify(todos));
     }, [todos]);
+    
 
   const addTodo = () => {
     if (input.trim() === "") return;
